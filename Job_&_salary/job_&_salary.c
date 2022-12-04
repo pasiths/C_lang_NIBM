@@ -21,7 +21,7 @@ int main(void) {
      printf("Software Developer: Rs90000.00 \n");
   }
   else if(num==5){
-     printf("Other designation: Rs 70000.00 \n");
+     printf("Other designation: Rs70000.00 \n");
   }
   else{
   	printf("Invalid output \n");

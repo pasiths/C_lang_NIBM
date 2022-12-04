@@ -5,9 +5,9 @@ int main(){
 	float num1,num2,ans;
 	
 	printf("Enter an operator (+, -, *, /): ");
-	  scanf("%c", &oper);
+	scanf("%c", &oper);
 	
-	printf("Enter the frist number: ");
+	printf("Enter the first number: ");
 	scanf("%f",&num1);
 	
 	printf("Enter the you second number: ");
@@ -15,8 +15,8 @@ int main(){
 	
 	switch (oper) {
 		case '+':
-		ans = num1 + num2;
-		printf ("%.2f + %.2f = %.2f \n", num1, num2, ans);
+		//ans = num1 + num2;
+		printf ("%.2f + %.2f = %.2f \n", num1, num2, (num1+num2));
 		break;
 		
 		case '-':
@@ -26,18 +26,18 @@ int main(){
 		
 		case '*':
 		ans = num1 * num2;
-		printf ("%.2f * %.2f = %.2f \n", num1, num2, ans);
+		//printf ("%.2f * %.2f = %.2f \n", num1, num2, ans);
 		break;
 		
 		case '/':
 		ans = num1 / num2;
-		printf ("%.2f / %.2f = %.2f \n", num1, num2, ans);
+		//printf ("%.2f / %.2f = %.2f \n", num1, num2, ans);
 		break;
 		
 		default:
-			printf("Invalied Operator\n");
-			return 0;
-			break;
+		printf("Invalied Operator\n");
+		break;
 		
 	}
+	printf("%.2f %c %.2f = %.2f \n",num1,oper,num2,ans);
 }
